@@ -5,10 +5,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class DBUtil {
-    private static final String PERSISTENCE_UNIT_NAME = "message_board";
+    private static final String PERSISTENCE_UNIT_NAME = "tasklist";
     private static EntityManagerFactory emf;
 
-    public static EntityManager createEntityMnager() {
+    public static EntityManager createEntityManager() {
         return _getEntityManagerFactory().createEntityManager();
     }
 
